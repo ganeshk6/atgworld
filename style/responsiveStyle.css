@@ -1,0 +1,114 @@
+@media screen and (max-width: 750px) {
+    .navber {
+        /* display: none; */
+        padding: 1rem 1rem !important;
+    }
+
+    .inputGroup {
+        display: none;
+    }
+
+    .articalPosted {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .jobType {
+        display: none;
+    }
+
+    .responsiveAndroid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+}
+
+.responsiveHive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.12);
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.responsiveDext {
+    display: none;
+}
+
+@media screen and (max-width: 850px) {
+    .responsiveHive {
+        display: none;
+    }
+
+    .responsiveDext {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 1rem;
+    }
+
+    .loginSignupForm {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        border-radius: 8px;
+        max-width: 600px;
+        width: 100%;
+        transform: translate(-50%, -100%);
+        background: #fff;
+        opacity: 0;
+        pointer-events: none;
+        box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .closeButton{
+        position: absolute;
+        color: #000;
+        top: 12px;
+    right: 12px;
+    }
+    .signStart {
+        display: none;
+    }
+
+    .signImage {
+        display: none;
+    }
+
+    .signtermCondition {
+        display: none;
+    }
+    .responsiveClass{
+        display: flex;
+        flex-direction: column;
+    }
+    .alreadyAccount{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    .loginAccount{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .loginSignupForm{
+        width: 500px;
+    }
+}
+@media screen and (max-width:550px) {
+    .loginSignupForm{
+        width: 400px;
+    }
+}
+@media screen and (max-width:450px) {
+    .loginSignupForm{
+        width: 350px;
+    }
+}

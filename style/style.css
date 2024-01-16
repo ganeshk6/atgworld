@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header css start  */
+.navber {
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+.imageLogo img {
+    width: 8rem;
+}
+
+.conatinerHeader {
+    padding: 0.5rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inputGroup {
+    width: 35%;
+    border: none;
+}
+
+.inputGroupText {
+    background-color: rgba(242, 242, 242, 1);
+    border-radius: 50px;
+    border: none;
+}
+
+.searchIcon {
+    color: rgba(122, 122, 122, 1);
+}
+
+.formControl {
+    border-radius: 50px;
+    background-color: rgba(242, 242, 242, 1);
+    border: none;
+}
+
+.formControl::placeholder {
+    font-size: 15px;
+}
+
+.nav-link {
+    color: #000000;
+}
+
+.nav-link:hover {
+    color: #000000;
+}
+
+.nav-link span {
+    color: #495DC6;
+}
+
+/* banner Start  */
+.banner {
+    z-index: 100;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 3rem;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.60) 100%), url(../images/bannerImage.jpeg);
+}
+
+/* Job type Menu start  */
+.jobType {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.12);
+    padding: 1rem 0rem 0rem 0rem;
+}
+
+.jobMenu ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style-type: none;
+    padding-left: 0;
+    left: 0;
+}
+
+.jobMenu ul li {
+    cursor: pointer;
+}
+
+.jobPost {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.navbarJobPost {
+    background-color: rgba(237, 238, 240, 1);
+    border-radius: 4px;
+}
+
+/* posted job and article  */
+.articalPosted {
+    padding: 2rem 0 0 0;
+    display: flex;
+    gap: 5rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.aboutContect {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: start;
+    font-weight: bold;
+}
+
+.postedBy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.postedbyName {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.postedbyName p {
+    font-weight: bold;
+}
+
+.sharePost {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.sharePost p {
+    color: rgba(82, 82, 82, 1);
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.threeDot {
+    cursor: pointer;
+}
+
+.articlejobContent {
+    color: #5C5C5C;
+    cursor: pointer;
+}
+
+.menuDropDown {
+    border: none;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.08), 0px 2px 8px 0px rgba(0, 0, 0, 0.16);
+}
+
+.sharImage img {
+    background-color: #EDEEF0;
+    padding: 0.3rem 0.5rem;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.serchForm {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #B8B8B8;
+
+}
+
+.serchForm span {
+    border: none;
+    background-color: #fff;
+}
+
+.serchForm input[type=text] {
+    border: none;
+    background-color: #fff;
+}
+
+.outlineNone:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.searchjob {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.logoutPage {
+    color: #000;
+    opacity: 0.5;
+}
+.opacity {
+    color: #000;
+    opacity: 0.5;
+}
+
+.meetupButton {
+    color: rgba(229, 97, 53, 1) !important;
+}
+
+.jobaplyButton {
+    color: rgba(2, 184, 117, 1) !important;
+}
+
+/* buller bg */
+.blur-bg-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    pointer-events: none;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.60) 100%);
+    transition: 0.1s ease;
+}
+
+.show-popup .blur-bg-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.responsiveClass{
+    display: flex;
+    gap: 1rem;
+}
+.loginSignupForm {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    max-width: 700px;
+    width: 100%;
+    transform: translate(-50%, -100%);
+    background: #fff;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.25);
+}
+
+.closeButton {
+    position: absolute;
+    top: -30px;
+    right: -12px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.responsiveAndroid{
+    display: none;
+}
+
+/* signup start  */
+.loginSignupForm .form-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.show-popup .loginSignupForm {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, opacity 0.1s;
+}
+
+.loginSignupForm .logIn,
+.loginSignupForm.show-signup .signUp {
+    display: none;
+}
+
+.loginSignupForm.show-signup .logIn {
+    display: flex;
+    flex-direction: column;
+}
+
+.closeButtons {
+    position: absolute;
+    top: -30px;
+    right: -12px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.signStart {
+    background: #EFFFF4;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.signStartText {
+    margin-top: 1rem;
+    color: #008A45;
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.alreadyAccount {
+    color: #3D3D3D;
+    text-align: right;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+}
+
+.signImage img {
+    display: flex;
+    width: 320px;
+    height: 320px;
+    padding: 20.395px 31.036px 38.761px 30.804px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.signtermCondition p {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: -0.088px;
+    opacity: 0.6;
+}
+
+/* Login start  */
+.forgetPassword {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.loginText {
+    color: #000;
+    font-family: IBM Plex Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.loginAccount {
+    color: #3D3D3D;
+    text-align: right;
+    font-family: IBM Plex Sans;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.cutForm {
+    margin-bottom: 480px;
+    position: absolute;
+    margin-right: -700px;
+}
